@@ -23,3 +23,16 @@ for (int i = 0; i < aarf.Length; i++)
     if (aarf[i].Length < 3) count += 1;
 }
 Console.WriteLine(count);
+
+string[] res = new string[count];
+int j = 0; 
+for (int i = 0; i < aarf.Length; i++)
+{
+    if (aarf[i].Length < 3) 
+    {
+        res[j] = aarf[i];
+        j++;
+    }
+}
+
+PrintArray(res);
