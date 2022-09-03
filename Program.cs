@@ -1,11 +1,11 @@
 ﻿
-string[] aarf = new string[5];
+string[] inputArray = new string[5];
 
-aarf[0] = "wow";
-aarf[1] = "2";
-aarf[2] = "set";
-aarf[3] = "?";
-aarf[4] = "90";
+inputArray[0] = "wow";
+inputArray[1] = "2";
+inputArray[2] = "set";
+inputArray[3] = "?";
+inputArray[4] = "90";
 
 void PrintArray(string [] array)
 {
@@ -15,24 +15,24 @@ void PrintArray(string [] array)
     }
 }
 
-PrintArray(aarf);
+PrintArray(inputArray);
 
 int count = 0;
-for (int i = 0; i < aarf.Length; i++)
+for (int i = 0; i < inputArray.Length; i++)
 {
-    if (aarf[i].Length < 3) count += 1;
+    if (inputArray[i].Length < 3) count += 1;
 }
 Console.WriteLine(count);
 
-string[] res = new string[count];
+string[] resultArray = new string[count];
 int j = 0; 
-for (int i = 0; i < aarf.Length; i++)
+for (int i = 0; i < inputArray.Length; i++)
 {
-    if (aarf[i].Length < 3) 
+    if (inputArray[i].Length < 3) 
     {
-        res[j] = aarf[i];
+        resultArray[j] = inputArray[i];
         j++;
     }
 }
 
-PrintArray(res);
+PrintArray(resultArray);
