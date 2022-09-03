@@ -16,3 +16,10 @@ void PrintArray(string [] array)
 }
 
 PrintArray(aarf);
+
+int count = 0;
+for (int i = 0; i < aarf.Length; i++)
+{
+    if (aarf[i].Length < 3) count += 1;
+}
+Console.WriteLine(count);
